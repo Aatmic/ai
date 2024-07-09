@@ -1,3 +1,7 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 langchain==0.2.7
 langchain_community==0.2.7
 langchain_core==0.2.12
